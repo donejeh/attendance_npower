@@ -28,13 +28,24 @@ SurName : <input type="text" name="sname"  /> <br>
 AGE :  <br><input type="number"  name="age" /> <br>
 Password : <input type="password" name="password" id="id_password"  /><i class="far fa-eye" id="togglePassword"></i>
  <br>
-Re-type Password : <input type="password"  /> <br>
+Re-type Password : <input type="password" name="repassword"  />  <br>
+
+<select name="state">
+  <option value="ABUJA">ABUJA</option>
+  <option value="KANO">KANO</option>
+  <option value="NIGER">NIGER</option>
+  <option value="BENUE">BENUE</option>
+  <option value="KWARA">KWARA</option>
+  <option value="KOGI">KOGI</option>
+  <option value="JOS">JOS</option>
+  <option value="KADUNA">KADUNA</option>
+</select> <br>
 Gender :
 
 Male : <input type="radio" value="male" name="gender" > 
 Female: <input type="radio" value="female" name="gender" > <br>
 <br>
-<input type="submit" value="Register now"  >
+<input type="submit" name="submit" value="Register now"  >
 
 Already a User? <a style="color:red" href="register.php"> Login here</a>
 </form>
@@ -61,5 +72,26 @@ const togglePassword = document.querySelector('#togglePassword');
 
 <?php
 
+if(isset($_POST['submit'])){
+
+
+  $id = $_POST['id'];
+  $first_name = $_POST['fname'];
+  $surname = $_POST['sname'];
+  $age = $_POST['age'];
+  $gender = $_POST['gender'];
+  $state = $_POST['state'];
+  $password = $_POST['password'];
+  $cpassword = $_POST['repassword'];
+
+  //here we are going to check for empty data
+
+  if($id == ''  || $first_name =='' || $surname =='' || $age =='' || $gender ==''|| $state ==''){
+       echo "<script> alert('omo why you dy do us like this nah?') </script>";
+  }else{
+
+  }
+
+}
 
 ?>

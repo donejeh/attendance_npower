@@ -45,3 +45,22 @@ input[type='submit'] {
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   
   }
+
+  p{
+    text-align: center;
+ }
+ input[type="email"]{
+    background-color: red;
+ }
+ input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    margin: 10px;
+    height: 32px;
+    border-radius: 2px;
+    font-size: 20px;
+  }
