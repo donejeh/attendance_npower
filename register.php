@@ -39,8 +39,6 @@ Re-type Password : <input type="password" name="repassword"  />  <br>
   <option value="KOGI">KOGI</option>
   <option value="JOS">JOS</option>
   <option value="KADUNA">KADUNA</option>
-  <option value="SOKOTO">SOKOTO</option>
-  <option value="radio">radio</option>
 </select> <br>
 Gender :
 
